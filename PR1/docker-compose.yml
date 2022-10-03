@@ -1,0 +1,17 @@
+version: "3"
+services:
+  server:
+    build: ./php
+    ports:
+      - 8080:80
+    volumes:
+      - ./www:/var/www/html
+    depends_on:
+      - data
+  data:
+    image: mariadb:latest
+    restart: always
+    volumes:
+      - ./sql:/docker-entrypoint-initdb.d
+    environment:
+      MARIADB_ROOT_PASSWORD: root

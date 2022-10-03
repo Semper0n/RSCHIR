@@ -1,0 +1,23 @@
+body {
+    height: auto;
+    width: 100%;
+    background-color: rgb(234, 215, 250);
+}
+
+div {
+    height: 80vh;
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    color: red;
+    font-size: 50px;
+    text-decoration: double;
+}
+
+.svg{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%
+}
